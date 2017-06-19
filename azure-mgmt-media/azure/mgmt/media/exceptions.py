@@ -5,22 +5,15 @@
 # regenerated.
 # --------------------------------------------------------------------------
 
-from enum import Enum
+from msrest.exceptions import (
+    ClientException,
+    SerializationError,
+    DeserializationError,
+    TokenExpiredError,
+    ClientRequestError,
+    AuthenticationError,
+    HttpOperationError,
+    ValidationError,
+)
 
-
-class ResourceType(Enum):
-
-    mediaservices = "mediaservices"
-
-
-class EntityNameUnavailabilityReason(Enum):
-
-    none = "None"
-    invalid = "Invalid"
-    already_exists = "AlreadyExists"
-
-
-class KeyType(Enum):
-
-    primary = "Primary"
-    secondary = "Secondary"
+from msrestazure.azure_exceptions import CloudError

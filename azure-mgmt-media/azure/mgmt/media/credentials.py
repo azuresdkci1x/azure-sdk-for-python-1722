@@ -5,22 +5,12 @@
 # regenerated.
 # --------------------------------------------------------------------------
 
-from enum import Enum
+from msrest.authentication import (
+    BasicAuthentication,
+    BasicTokenAuthentication,
+    OAuthTokenAuthentication)
 
-
-class ResourceType(Enum):
-
-    mediaservices = "mediaservices"
-
-
-class EntityNameUnavailabilityReason(Enum):
-
-    none = "None"
-    invalid = "Invalid"
-    already_exists = "AlreadyExists"
-
-
-class KeyType(Enum):
-
-    primary = "Primary"
-    secondary = "Secondary"
+from msrestazure.azure_active_directory import (
+    InteractiveCredentials,
+    ServicePrincipalCredentials,
+    UserPassCredentials)
